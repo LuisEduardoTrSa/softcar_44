@@ -1,0 +1,137 @@
+/* ESTILO GERAL E ESQUEMA DE CORES (AZUL ESCURO E PRATA) */
+:root {
+  /* DECLARAÇÃO DAS CORES DA MARCA SOFTCAR */
+  --COR-PRIMARIA: #0f2027;
+  --COR-SECUNDARIA: #203a43;
+  --COR-DESTAQUE: #00d2ff;
+  --COR-FUNDO: #f4f7f6;
+  --COR-TEXTO: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--COR-FUNDO);
+  color: var(--COR-TEXTO);
+  line-height: 1.6;
+}
+
+/* CABEÇALHO E MENU DE NAVEGAÇÃO */
+header {
+  background: linear-gradient(to right, var(--COR-PRIMARIA), var(--COR-SECUNDARIA));
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.logo-container span {
+  color: var(--COR-DESTAQUE);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: var(--COR-DESTAQUE);
+  color: var(--COR-PRIMARIA);
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* PATROCINADORES DA HOME */
+.patrocinadores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card-patrocinador {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.card-patrocinador img {
+  max-width: 100%;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* GALERIA DE FOTOS (3 COLUNAS) */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ESTILIZAÇÃO DE TABELA (5 COLUNAS X 15 LINHAS) */
+.tabela-customizada {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.tabela-customizada th, .tabela-customizada td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* CORES DIVERSAS PARA CÉLULAS DA TABELA */
+.celula-cor1 { background-color: #e3f2fd; }
+.celula-cor2 { background-color: #e8f5e9; }
+.celula-cor3 { background-color: #fff3e0; }
+.celula-cor4 { background-color: #fce4ec; }
+
+/* RODAPÉ */
+footer {
+  background-color: var(--COR-PRIMARIA);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
